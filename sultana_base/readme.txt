@@ -4,13 +4,18 @@
 Uninstall modules:
 
 1- spreadsheet_dashboard
+2- To-do
+3- Project
+4- Email Marketing
+5- Survey
+6- Link Tracker - utm tracker
 
 ########################################################################################################################
 ########################################################################################################################
 Configuration:
 
 General Settings:
-    1- Statistics: set "Digest Email" as False
+    1- Emails: set "Digest Email" as False
     2- Disable "Send SMS"
     3- Disable "Partner Autocomplete"
 
@@ -34,6 +39,7 @@ POS:
     2- check "Display Stock in POS" and "Restrict Product Out of Stock in POS"
     3- remove taxes
     4- set "Inventory Management" as "In real time (accurate but slower)"
+    5- delete payment methods
 
 ########################################################################################################################
 ########################################################################################################################
@@ -44,6 +50,8 @@ Point of Sale: User
 
 Purchase: User
 
+Preferences:
+    - Notification: check "Handle in Odoo"
 
 ########################################################################################################################
 ########################################################################################################################
