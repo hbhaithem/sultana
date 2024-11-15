@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="purchase_order_form_sultana" model="ir.ui.view">
+            <field name="name">purchase.order.form</field>
+            <field name="model">purchase.order</field>
+            <field name="inherit_id" ref="purchase.purchase_order_form"/>
+            <field name="arch" type="xml">
+                <field name="partner_ref" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </field>
+                <field name="currency_id" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </field>
+                <field name="date_planned" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </field>
+                <button name="action_rfq_send" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </button>
+                <page name="purchase_delivery_invoice" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </page>
+            </field>
+        </record>
+
+        <record id="purchase_order_view_form_inherit" model="ir.ui.view">
+            <field name="name">purchase.order.form.inherit</field>
+            <field name="model">purchase.order</field>
+            <field name="inherit_id" ref="purchase_stock.purchase_order_view_form_inherit"/>
+            <field name="arch" type="xml">
+                <xpath expr="//button[hasclass('oe_link')]" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+            </field>
+
+        </record>
+    </data>
+</odoo>

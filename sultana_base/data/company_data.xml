@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <function name="write" model="ir.model.data">
+            <function name="search" model="ir.model.data">
+                <value eval="[('module', '=', 'base'), ('name', '=', 'main_company')]"/>
+            </function>
+            <value eval="{'noupdate': False}"/>
+        </function>
+
+        <record id="base.main_company" model="res.company">
+            <field name="name">Sultana Leila</field>
+            <field name="currency_id" ref="base.DZD"/>
+            <field name="country_id" ref="base.dz"/>
+        </record>
+
+        <function name="write" model="ir.model.data">
+            <function name="search" model="ir.model.data">
+                <value eval="[('module', '=', 'base'), ('name', '=', 'main_company')]"/>
+            </function>
+            <value eval="{'noupdate': True}"/>
+        </function>
+
+    </data>
+</odoo>

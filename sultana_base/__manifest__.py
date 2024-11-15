@@ -1,0 +1,30 @@
+# -*- coding: utf-8 -*-
+{
+    'name': 'Sultana Base',
+    'version': '18.0',
+    'category': 'Point of Sale',
+    'summary': '',
+    'description': '',
+    'author': 'Haithem Bouhelais',
+    'company': 'Haithem Bouhelais',
+    'maintainer': 'Haithem Bouhelais',
+    'website': '',
+    'depends': [
+        'stock',
+        'account',
+        'purchase',
+        'point_of_sale',
+        # 'pos_restrict_product_stock',
+        # 'pos_set_default_customer',
+    ],
+    'data': [
+        'data/company_data.xml',
+        'views/menus.xml',
+        'views/purchase_order.xml',
+    ],
+    'assets': {},
+    'license': 'AGPL-3',
+    'installable': True,
+    'auto_install': False,
+    'application': True,
+}
