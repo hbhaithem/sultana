@@ -15,7 +15,7 @@
         'purchase',
         'point_of_sale',
         # 'pos_restrict_product_stock',
-        # 'pos_set_default_customer',
+        'pos_default_customer',
     ],
     'data': [
         'data/company_data.xml',

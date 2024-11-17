@@ -18,6 +18,9 @@ General Settings:
     1- Emails: set "Digest Email" as False
     2- Disable "Send SMS"
     3- Disable "Partner Autocomplete"
+    4- Disable "Password Reset"
+    5- Disable "Show Effect"
+    6- Disable "Unsplash Image Library"
 
 Purchase:
     1- disable "Receipt Reminder"
@@ -50,7 +53,7 @@ Point of Sale: User
 
 Purchase: User
 
-Preferences:
+User Preferences:
     - Notification: check "Handle in Odoo"
 
 ########################################################################################################################
@@ -65,3 +68,5 @@ Archive all Taxes
 
 ########################################################################################################################
 ########################################################################################################################
+
+Add default customer to POS
