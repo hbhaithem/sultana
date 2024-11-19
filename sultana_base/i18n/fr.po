@@ -1,0 +1,126 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sultana_base
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-19 19:05+0000\n"
+"PO-Revision-Date: 2024-11-19 19:05+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sultana_base
+#: model:ir.model.fields,help:sultana_base.field_product_product__is_storable
+#: model:ir.model.fields,help:sultana_base.field_product_template__is_storable
+msgid "A storable product is a product for which you manage stock."
+msgstr "Un produit stockable est un produit pour lequel vous gérez un stock."
+
+#. module: sultana_base
+#. odoo-python
+#: code:addons/sultana_base/wizard/pos_profit_loss_details_wizard.py:0
+msgid "Check out the dates"
+msgstr "Consultez les dates"
+
+#. module: sultana_base
+#: model_terms:ir.ui.view,arch_db:sultana_base.view_pos_profit_loss_details_wizard
+msgid "Close"
+msgstr "Fermer"
+
+#. module: sultana_base
+#: model:ir.model.fields,field_description:sultana_base.field_pos_profit_loss_details_wizard__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: sultana_base
+#: model:ir.model.fields,field_description:sultana_base.field_pos_profit_loss_details_wizard__create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: sultana_base
+#: model:ir.model.fields,field_description:sultana_base.field_pos_profit_loss_details_wizard__currency_id
+msgid "Currency"
+msgstr "Devise"
+
+#. module: sultana_base
+#: model:ir.model.fields,field_description:sultana_base.field_pos_profit_loss_details_wizard__display_name
+msgid "Display Name"
+msgstr "Nom d'affichage"
+
+#. module: sultana_base
+#: model:ir.model.fields,field_description:sultana_base.field_pos_profit_loss_details_wizard__end_date
+msgid "End Date"
+msgstr "Date de fin"
+
+#. module: sultana_base
+#: model:ir.model.fields,field_description:sultana_base.field_pos_profit_loss_details_wizard__id
+msgid "ID"
+msgstr "ID"
+
+#. module: sultana_base
+#: model:ir.model.fields,field_description:sultana_base.field_pos_profit_loss_details_wizard__write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: sultana_base
+#: model:ir.model.fields,field_description:sultana_base.field_pos_profit_loss_details_wizard__write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: sultana_base
+#: model:ir.model,name:sultana_base.model_product_template
+msgid "Product"
+msgstr "Produit"
+
+#. module: sultana_base
+#: model:ir.model.fields,field_description:sultana_base.field_pos_profit_loss_details_wizard__profit_loss
+msgid "Profit/Loss"
+msgstr "Bénéfice/Perte"
+
+#. module: sultana_base
+#: model:ir.actions.act_window,name:sultana_base.action_profit_loss_details
+#: model:ir.ui.menu,name:sultana_base.menu_profit_loss_details
+#: model_terms:ir.ui.view,arch_db:sultana_base.view_pos_profit_loss_details_wizard
+msgid "Profit/Loss Details"
+msgstr "Détails des Bénéfices/Pertes"
+
+#. module: sultana_base
+#: model:ir.model,name:sultana_base.model_pos_profit_loss_details_wizard
+msgid "Profit/Loss Details Report"
+msgstr "Rapport détaillé sur les profits/pertes"
+
+#. module: sultana_base
+#: model_terms:ir.ui.view,arch_db:sultana_base.view_pos_profit_loss_details_wizard
+msgid "Results"
+msgstr "Résultats"
+
+#. module: sultana_base
+#: model:ir.model.fields,field_description:sultana_base.field_pos_profit_loss_details_wizard__start_date
+msgid "Start Date"
+msgstr "Date de début"
+
+#. module: sultana_base
+#: model:ir.model.fields,field_description:sultana_base.field_pos_profit_loss_details_wizard__total_cost
+msgid "Total Cost"
+msgstr "Coût total"
+
+#. module: sultana_base
+#: model:ir.model.fields,field_description:sultana_base.field_pos_profit_loss_details_wizard__total_price
+msgid "Total Price"
+msgstr "Prix de vente total"
+
+#. module: sultana_base
+#: model:ir.model.fields,field_description:sultana_base.field_pos_profit_loss_details_wizard__total_quantity
+msgid "Total Quantity"
+msgstr "Quantité Vendu Totale"
+
+#. module: sultana_base
+#: model:ir.model.fields,field_description:sultana_base.field_product_product__is_storable
+#: model:ir.model.fields,field_description:sultana_base.field_product_template__is_storable
+msgid "Track Inventory"
+msgstr "Suivre l'inventaire"
