@@ -29,6 +29,7 @@
         'point_of_sale._assets_pos': [
             'sultana_base/static/src/product_info_popup.xml',
             'sultana_base/static/src/product_info_banner.xml',
+            'sultana_base/static/src/navbar.xml',
         ],
     },
     'license': 'AGPL-3',
