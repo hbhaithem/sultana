@@ -1,0 +1,6 @@
+master/xyz/**/*.pyc
+
+__pycache__/
+*.py[cod]
+/.idea
+*.mo
