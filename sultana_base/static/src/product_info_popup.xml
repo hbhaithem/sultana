@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="sultana_base.ProductInfoPopup" t-inherit="point_of_sale.ProductInfoPopup" t-inherit-mode="extension">
+        <xpath expr="//div[hasclass('section-inventory')]" position="attributes">
+            <attribute name="class" add="d-none" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('section-supplier')]" position="attributes">
+            <attribute name="class" add="d-none" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('financials-order')]" position="attributes">
+            <attribute name="class" add="d-none" separator=" "/>
+        </xpath>
+        <xpath expr="//button[@t-if='allowProductEdition']" position="attributes">
+            <attribute name="class" add="d-none" separator=" "/>
+        </xpath>
+    </t>
+</templates>

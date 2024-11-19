@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <record id="action_profit_loss_details" model="ir.actions.act_window">
+            <field name="name">Profit/Loss Details</field>
+            <field name="res_model">pos.profit.loss.details.wizard</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+        <menuitem id="menu_profit_loss_details" name="Profit/Loss Details" action="action_profit_loss_details" parent="point_of_sale.menu_point_rep" sequence="10"/>
+</odoo>
