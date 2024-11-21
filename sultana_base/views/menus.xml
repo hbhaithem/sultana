@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
     <data>
+
         <record id="mail.menu_root_discuss" model="ir.ui.menu">
             <field name="active">False</field>
         </record>
@@ -8,6 +9,15 @@
             <field name="groups_id" eval="[(6, 0, [ref('base.group_erp_manager')])]"/>
         </record>
         <record id="point_of_sale.menu_action_tax_form_open" model="ir.ui.menu">
+            <field name="active">False</field>
+        </record>
+        <record id="point_of_sale.menu_report_pos_order_all" model="ir.ui.menu">
+            <field name="active">False</field>
+        </record>
+        <record id="point_of_sale.menu_report_order_details" model="ir.ui.menu">
+            <field name="active">False</field>
+        </record>
+        <record id="point_of_sale.menu_report_daily_details" model="ir.ui.menu">
             <field name="active">False</field>
         </record>
 

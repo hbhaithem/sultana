@@ -24,6 +24,7 @@
         'views/purchase_order.xml',
         'views/pos_order_report_views.xml',
         'views/product_views.xml',
+        'views/pos_order_line_views.xml',
         'wizard/pos_profit_loss_details_wizard.xml',
     ],
     'assets': {
