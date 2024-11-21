@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 from odoo import fields, models, api
+from random import choice
+from string import digits
 
 
 class ProductTemplate(models.Model):
@@ -24,3 +26,16 @@ class ProductTemplate(models.Model):
         super(ProductTemplate, self)._compute_quantities()
         for product in self:
             product.available_in_pos = product.qty_available > 0
+
+    @api.model
+    def calculate_checksum(self):
+        base_code = '613' + "".join(choice(digits) for _ in range(9))  # First 12 digits
+        weighted_sum = sum((3 if i % 2 else 1) * int(d) for i, d in enumerate(base_code))
+        return base_code + str((10 - (weighted_sum % 10)) % 10)
+
+    def generate_random_barcode(self):
+        for product in self:
+            barcode = self.calculate_checksum()
+            while self.env['product.product'].search([('barcode', '=', barcode)]):
+                barcode = self.calculate_checksum()
+            product.barcode = barcode

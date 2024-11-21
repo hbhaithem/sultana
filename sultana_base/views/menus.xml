@@ -7,6 +7,9 @@
         <record id="base.menu_management" model="ir.ui.menu">
             <field name="groups_id" eval="[(6, 0, [ref('base.group_erp_manager')])]"/>
         </record>
+        <record id="point_of_sale.menu_action_tax_form_open" model="ir.ui.menu">
+            <field name="active">False</field>
+        </record>
 
     </data>
 </odoo>
