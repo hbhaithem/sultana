@@ -2,21 +2,60 @@
 <odoo>
     <data>
 
+        <menuitem id="menu_orders_pos_category_configuration"
+                  name="Categories"
+                  parent="point_of_sale.menu_point_of_sale"
+                  sequence="999"
+        />
+
+        <menuitem id="menu_orders_pos_category"
+                  name="Categories"
+                  action="point_of_sale.product_pos_category_action"
+                  parent="menu_orders_pos_category_configuration"
+                  sequence="1"
+        />
+
+
         <record id="mail.menu_root_discuss" model="ir.ui.menu">
             <field name="active">False</field>
         </record>
-        <record id="base.menu_management" model="ir.ui.menu">
-            <field name="groups_id" eval="[(6, 0, [ref('base.group_erp_manager')])]"/>
+
+        <record id="point_of_sale.menu_point_of_sale" model="ir.ui.menu">
+            <field name="name">Sale</field>
         </record>
+
+        <record id="point_of_sale.menu_point_ofsale" model="ir.ui.menu">
+            <field name="groups_id" eval="[(6, 0, [ref('sultana_base.group_super_manager')])]"/>
+        </record>
+
+        <record id="point_of_sale.menu_pos_session_all" model="ir.ui.menu">
+            <field name="groups_id" eval="[(6, 0, [ref('sultana_base.group_super_manager')])]"/>
+        </record>
+
+        <record id="point_of_sale.menu_point_rep" model="ir.ui.menu">
+            <field name="groups_id" eval="[(6, 0, [ref('sultana_base.group_super_manager')])]"/>
+        </record>
+
+        <record id="point_of_sale.menu_pos_payment" model="ir.ui.menu">
+            <field name="groups_id" eval="[(6, 0, [ref('sultana_base.group_super_manager')])]"/>
+        </record>
+
+        <record id="purchase.menu_purchase_root" model="ir.ui.menu">
+            <field name="groups_id" eval="[(6, 0, [ref('sultana_base.group_super_manager')])]"/>
+        </record>
+
         <record id="point_of_sale.menu_action_tax_form_open" model="ir.ui.menu">
             <field name="active">False</field>
         </record>
+
         <record id="point_of_sale.menu_report_pos_order_all" model="ir.ui.menu">
             <field name="active">False</field>
         </record>
+
         <record id="point_of_sale.menu_report_order_details" model="ir.ui.menu">
             <field name="active">False</field>
         </record>
+
         <record id="point_of_sale.menu_report_daily_details" model="ir.ui.menu">
             <field name="active">False</field>
         </record>

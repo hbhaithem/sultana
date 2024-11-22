@@ -19,12 +19,15 @@
     ],
     'data': [
         'security/ir.model.access.csv',
+        'security/base_groups.xml',
         'data/company_data.xml',
         'views/menus.xml',
         'views/purchase_order.xml',
         'views/pos_order_report_views.xml',
         'views/product_views.xml',
         'views/pos_order_line_views.xml',
+        'views/account_move.xml',
+        'views/res_partner.xml',
         'wizard/pos_profit_loss_details_wizard.xml',
     ],
     'assets': {
