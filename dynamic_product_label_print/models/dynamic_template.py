@@ -29,9 +29,9 @@ class DynamicTemplate(models.Model):
 
     name = fields.Char(string='Name', required=True,
                        help='Name of the template')
-    bc_height = fields.Char(string='Barcode Height', required=True,
+    bc_height = fields.Char(string='Barcode Height',
                             help='Height of the barcode')
-    bc_width = fields.Char(string='Barcode width', required=True,
+    bc_width = fields.Char(string='Barcode width',
                            help='Width of the barcode')
     dynamic_field_ids = fields.One2many('dynamic.fields', 'field_id',
                                         string='Fields',

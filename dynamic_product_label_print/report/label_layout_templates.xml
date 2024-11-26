@@ -58,8 +58,8 @@
     <!--Calling the template report_dynamic_label-->
     <template id="report_productlabel_dynamic">
         <t t-call="web.html_container">
-            <t t-set="barcode_size" t-att-value="'width:{bc_width}mm;height:{bc_height}mm'"/>
-            <t t-set="barcode_size" t-value="'width:%smm;height: %smm' % (bc_width, bc_height)"/>
+<!--            <t t-set="barcode_size" t-att-value="'width:{bc_width}mm;height:{bc_height}mm'"/>-->
+            <t t-set="barcode_size" t-value="'width:20mm;height:2mm'"/>
             <t t-set="padding_page" t-value="'padding: 2mm'"/>
             <t t-foreach="quantity.items()" t-as="barcode_and_qty_by_product">
                 <t t-set="product" t-value="barcode_and_qty_by_product[0]"/>
@@ -93,8 +93,7 @@
     </record>
 
     <!--Defined report action-->
-    <record id="dynamic_product_label_print.product_label_layout_form_dynamic"
-            model="ir.actions.report">
+    <record id="dynamic_product_label_print.product_label_layout_form_dynamic" model="ir.actions.report">
         <field name="name">Product Label (PDF)</field>
         <field name="model">product.template</field>
         <field name="report_type">qweb-pdf</field>
