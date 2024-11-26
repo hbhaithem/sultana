@@ -21,6 +21,7 @@
         'security/ir.model.access.csv',
         'security/base_groups.xml',
         'data/company_data.xml',
+        'data/ir_sequence.xml',
         'views/menus.xml',
         'views/purchase_order.xml',
         'views/pos_order_report_views.xml',
@@ -28,6 +29,7 @@
         'views/pos_order_line_views.xml',
         'views/account_move.xml',
         'views/res_partner.xml',
+        'views/pos_category_views.xml',
         'wizard/pos_profit_loss_details_wizard.xml',
     ],
     'assets': {

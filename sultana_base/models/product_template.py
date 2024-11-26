@@ -39,3 +39,12 @@ class ProductTemplate(models.Model):
             while self.env['product.product'].search([('barcode', '=', barcode)]):
                 barcode = self.calculate_checksum()
             product.barcode = barcode
+
+    @api.onchange('pos_categ_ids')
+    def onchange_pos_categ(self):
+        if self.pos_categ_ids and self.pos_categ_ids[0].generate_ref and self.pos_categ_ids[0].reference and not self.name:
+            if self.pos_categ_ids[0].reference == 'PJ':
+                self.name = self.env['ir.sequence'].next_by_code('product.template.pj')
+            if self.pos_categ_ids[0].reference == 'GN':
+                self.name = self.env['ir.sequence'].next_by_code('product.template.gn')
+

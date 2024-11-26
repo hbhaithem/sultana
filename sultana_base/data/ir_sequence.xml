@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+
+        <record id="seq_pos_category_pyjama" model="ir.sequence">
+            <field name="name">pos_categ_pj</field>
+            <field name="code">product.template.pj</field>
+            <field name="prefix">PJ-</field>
+            <field name="padding">5</field>
+            <field name="company_id" eval="False"/>
+        </record>
+
+        <record id="seq_pos_category_gandoura" model="ir.sequence">
+            <field name="name">pos_categ_gn</field>
+            <field name="code">product.template.gn</field>
+            <field name="prefix">GN-</field>
+            <field name="padding">5</field>
+            <field name="company_id" eval="False"/>
+        </record>
+    </data>
+</odoo>
