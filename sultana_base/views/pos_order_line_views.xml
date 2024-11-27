@@ -51,9 +51,9 @@
                     <field name="product_id"/>
                     <field name="total_cost"/>
                     <field name="qty" sum="Quantity"/>
-                    <field name="price_unit" widget="monetary" sum="Subtotal"/>
+                    <field name="price_unit" widget="monetary"/>
                     <field name="price_subtotal" string="Subtotal" sum="Total"/>
-                    <field name="margin" string="Margin" sum="Margin"/>
+                    <field name="margin" string="Margin"/>
                     <field name="currency_id" column_invisible="True"/>
                 </list>
             </field>
@@ -68,7 +68,7 @@
                     <field name="product_id"/>
                     <field name="name"/>
                     <field name="create_date" />
-                    <filter string="create_date Date" name="create_date" date="create_date"/>
+                    <filter string="Create Date" name="create_date" date="create_date"/>
                     <group expand="1" string="Group By">
                         <filter string="Product" name="product" context="{'group_by':'product_id'}"/>
                     </group>

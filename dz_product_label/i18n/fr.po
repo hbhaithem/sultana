@@ -1,0 +1,89 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* dz_product_label
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-27 20:23+0000\n"
+"PO-Revision-Date: 2024-11-27 20:23+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: dz_product_label
+#: model:ir.actions.report,print_report_name:dz_product_label.report_product_template_label_dz
+msgid "'Products Labels - %s' % (object.name)"
+msgstr "'Etiquettes Produits - %s' % (object.name)"
+
+#. module: dz_product_label
+#: model_terms:ir.ui.view,arch_db:dz_product_label.product_label_layout_form
+msgid "Confirm"
+msgstr "Confirmer"
+
+#. module: dz_product_label
+#: model:ir.model.fields,field_description:dz_product_label.field_dz_product_label_layout__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: dz_product_label
+#: model:ir.model.fields,field_description:dz_product_label.field_dz_product_label_layout__create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: dz_product_label
+#: model:ir.actions.report,name:dz_product_label.report_product_template_label_dz
+msgid "DZ Product Label"
+msgstr "Etiquette de produit DZ"
+
+#. module: dz_product_label
+#: model_terms:ir.ui.view,arch_db:dz_product_label.product_label_layout_form
+msgid "Discard"
+msgstr "Fermer"
+
+#. module: dz_product_label
+#: model:ir.model.fields,field_description:dz_product_label.field_dz_product_label_layout__display_name
+msgid "Display Name"
+msgstr "Nom Affiché"
+
+#. module: dz_product_label
+#: model:ir.model.fields,field_description:dz_product_label.field_dz_product_label_layout__id
+msgid "ID"
+msgstr ""
+
+#. module: dz_product_label
+#: model:ir.model.fields,field_description:dz_product_label.field_dz_product_label_layout__write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: dz_product_label
+#: model:ir.model.fields,field_description:dz_product_label.field_dz_product_label_layout__write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: dz_product_label
+#: model:ir.model,name:dz_product_label.model_product_template
+#: model:ir.model.fields,field_description:dz_product_label.field_dz_product_label_layout__product_tmpl_id
+msgid "Product"
+msgstr "Produit"
+
+#. module: dz_product_label
+#: model:ir.actions.act_window,name:dz_product_label.action_open_dz_label_layout
+#: model:ir.model,name:dz_product_label.model_dz_product_label_layout
+msgid "Product Label Layout"
+msgstr "Disposition de l'étiquette du produit"
+
+#. module: dz_product_label
+#: model:ir.model.fields,field_description:dz_product_label.field_dz_product_label_layout__quantity
+msgid "Quantity"
+msgstr "Quantité"
+
+#. module: dz_product_label
+#. odoo-python
+#: code:addons/dz_product_label/wizard/product_label_layout.py:0
+msgid "You need to set a positive quantity."
+msgstr "Vous devez définir une quantité positive."

@@ -1,0 +1,36 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* pos_default_customer
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-27 20:08+0000\n"
+"PO-Revision-Date: 2024-11-27 20:08+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: pos_default_customer
+#: model_terms:ir.ui.view,arch_db:pos_default_customer.inherit_ip_pos_config_view_form
+msgid "Default Customer in POS Order."
+msgstr "Client par défaut dans le PdV."
+
+#. module: pos_default_customer
+#: model_terms:ir.ui.view,arch_db:pos_default_customer.inherit_ip_pos_config_view_form
+msgid "Default Customer."
+msgstr "Client par Défaut"
+
+#. module: pos_default_customer
+#: model:ir.model,name:pos_default_customer.model_pos_config
+msgid "Point of Sale Configuration"
+msgstr "Configuration du point de vente"
+
+#. module: pos_default_customer
+#: model:ir.model.fields,field_description:pos_default_customer.field_pos_config__default_partner_id
+msgid "Select Customer"
+msgstr "Sélectionner Client"

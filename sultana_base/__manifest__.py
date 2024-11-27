@@ -14,7 +14,7 @@
         'account',
         'purchase',
         'point_of_sale',
-        # 'pos_restrict_product_stock',
+        'dz_product_label',
         'pos_default_customer',
     ],
     'data': [

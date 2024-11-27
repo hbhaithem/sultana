@@ -1,1 +1,2 @@
-id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_dz_product_label_layout,dz.product.label.layout,model_dz_product_label_layout,,1,1,1,1
