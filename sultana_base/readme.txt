@@ -82,3 +82,14 @@ Add default customer to POS
 ########################################################################################################################
 
 configure , in floats from lang
+
+########################################################################################################################
+########################################################################################################################
+
+script:
+delete from stock_picking where id=5;
+delete from stock_move where picking_id=5;
+delete from stock_picking where id=12;
+delete from stock_move where picking_id=12;
+delete from account_move where id=8;
+update purchase_order set state='draft' where id=5

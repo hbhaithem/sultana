@@ -15,5 +15,7 @@ class PurchaseOrder(models.Model):
             for invoice in order.invoice_ids:
                 invoice.invoice_date = fields.Date.today()
                 invoice.action_post()
-                pay.with_context(active_model='account.move', active_ids=invoice.ids).create([{}])._create_payments()
+                pay.with_context(active_model='account.move', active_ids=invoice.ids).create([{
+                    'journal_id': self.env.ref('account.1_cash').id,
+                }])._create_payments()
         return res
