@@ -167,7 +167,7 @@ msgstr "Bénéfice/Perte"
 #: model:ir.ui.menu,name:sultana_base.menu_profit_loss_details
 #: model_terms:ir.ui.view,arch_db:sultana_base.view_pos_profit_loss_details_wizard
 msgid "Profit/Loss Details"
-msgstr "Détails des Bénéfices/Pertes"
+msgstr "Bénéfices / Pertes"
 
 #. module: sultana_base
 #: model:ir.model,name:sultana_base.model_pos_profit_loss_details_wizard
@@ -238,7 +238,7 @@ msgstr "Prix de vente total"
 #. module: sultana_base
 #: model:ir.model.fields,field_description:sultana_base.field_pos_profit_loss_details_wizard__total_quantity
 msgid "Total Quantity"
-msgstr "Quantité Vendu Totale"
+msgstr "Quantité Totale"
 
 #. module: sultana_base
 #: model:ir.model.fields,field_description:sultana_base.field_product_product__is_storable
@@ -255,3 +255,9 @@ msgstr "Fournisseurs"
 #: model_terms:ir.ui.view,arch_db:sultana_base.view_pos_order_line_search
 msgid "Create Date"
 msgstr "Date de Création"
+
+#. module: sultana_base
+#: model:ir.model.fields,field_description:sultana_base.field_product_product__is_storable
+#: model:ir.model.fields,field_description:sultana_base.field_product_template__is_storable
+msgid "Storable"
+msgstr "Stockable"

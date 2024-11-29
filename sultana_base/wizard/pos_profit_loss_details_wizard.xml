@@ -13,16 +13,19 @@
                         <field name="end_date"/>
                     </group>
                 </group>
+                <group>
+                    <field name="product_ids" widget="many2many_tags" options="{'no_edit': True, 'no_create': True, 'no_open': True}"/>
+                </group>
                 <separator/>
                 <group string="Results">
                     <group>
-                        <field name="total_cost"/>
-                        <field name="total_price"/>
+                        <field name="total_cost" readonly="1"/>
+                        <field name="total_price" readonly="1"/>
                     </group>
                     <group>
-                        <field name="total_quantity"/>
-                        <field name="profit_loss"/>
-                        <field name="currency_id" invisible="1" />
+                        <field name="total_quantity" readonly="1"/>
+                        <field name="profit_loss" readonly="1"/>
+                        <field name="currency_id" invisible="1"/>
                     </group>
                 </group>
                 <footer>

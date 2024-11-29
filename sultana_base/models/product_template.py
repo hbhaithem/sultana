@@ -8,24 +8,15 @@ class ProductTemplate(models.Model):
     _inherit = 'product.template'
 
     is_storable = fields.Boolean(
-        'Track Inventory', store=True, compute='compute_is_storable', readonly=False,
+        'Storable', store=True, compute='compute_is_storable', readonly=False,
         default=True, precompute=True, help='A storable product is a product for which you manage stock.')
+
+    available_in_pos = fields.Boolean(string='Available in POS', default=True)
 
     @api.depends('type')
     def compute_is_storable(self):
         for record in self:
             record.is_storable = record.type == 'consu'
-
-    @api.depends(
-        'product_variant_ids.qty_available',
-        'product_variant_ids.virtual_available',
-        'product_variant_ids.incoming_qty',
-        'product_variant_ids.outgoing_qty',
-    )
-    def _compute_quantities(self):
-        super(ProductTemplate, self)._compute_quantities()
-        for product in self:
-            product.available_in_pos = product.qty_available > 0
 
     @api.model
     def calculate_checksum(self):
@@ -42,9 +33,6 @@ class ProductTemplate(models.Model):
 
     @api.onchange('pos_categ_ids')
     def onchange_pos_categ(self):
-        if self.pos_categ_ids and self.pos_categ_ids[0].generate_ref and self.pos_categ_ids[0].reference and not self.name:
-            if self.pos_categ_ids[0].reference == 'PJ':
-                self.name = self.env['ir.sequence'].next_by_code('product.template.pj')
-            if self.pos_categ_ids[0].reference == 'GN':
-                self.name = self.env['ir.sequence'].next_by_code('product.template.gn')
-
+        if self.pos_categ_ids and self.pos_categ_ids[0].reference.strip() and not self.name:
+            seq = self.env['ir.sequence'].next_by_code('product.template.sequence')
+            self.name = self.pos_categ_ids[0].reference.strip() + '-' + seq
