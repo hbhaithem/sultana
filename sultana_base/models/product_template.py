@@ -33,6 +33,7 @@ class ProductTemplate(models.Model):
 
     @api.onchange('pos_categ_ids')
     def onchange_pos_categ(self):
-        if self.pos_categ_ids and self.pos_categ_ids[0].reference.strip() and not self.name:
+        if not self.name and self.pos_categ_ids and self.pos_categ_ids[0].reference and str(
+                self.pos_categ_ids[0].reference).strip():
             seq = self.env['ir.sequence'].next_by_code('product.template.sequence')
             self.name = self.pos_categ_ids[0].reference.strip() + '-' + seq
