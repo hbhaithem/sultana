@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+
+        <!-- Salary Payment -->
+        <record id="view_pos_salary_payment_form" model="ir.ui.view">
+            <field name="name">pos.salary.payment.form</field>
+            <field name="model">pos.salary.payment</field>
+            <field name="arch" type="xml">
+                <form string="Salary Payment">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="partner_id"
+                                       options="{'no_quick_create': True, 'no_create_edit': True, 'no_open': True}"/>
+                                <field name="amount"/>
+                                <field name="currency_id" invisible="1"/>
+                            </group>
+                            <group>
+                                <field name="date"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_pos_salary_payment_list" model="ir.ui.view">
+            <field name="name">pos.salary.payment.list</field>
+            <field name="model">pos.salary.payment</field>
+            <field name="arch" type="xml">
+                <list string="Salary Payment">
+                    <field name="partner_id"/>
+                    <field name="date"/>
+                    <field name="amount" sum="Total"/>
+                    <field name="currency_id" column_invisible="1"/>
+                </list>
+            </field>
+        </record>
+
+        <record id="view_pos_salary_payment_search" model="ir.ui.view">
+            <field name="name">pos.salary.payment.search</field>
+            <field name="model">pos.salary.payment</field>
+            <field name="arch" type="xml">
+                <search string="Search Salary Payment">
+                    <filter name="group_date" string="Date" context="{'group_by':'date:month'}"/>
+                    <filter name="group_partner_id" string="Employee" context="{'group_by':'partner_id'}"/>
+                    <field name="partner_id"/>
+                    <field name="amount"/>
+                    <group expand="1" string="Group By">
+                        <filter string="Date" context="{'group_by':'date:month'}" name="date"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <record id="action_pos_salary_payment" model="ir.actions.act_window">
+            <field name="name">Salary Payment</field>
+            <field name="res_model">pos.salary.payment</field>
+            <field name="view_mode">list,form</field>
+            <field name="search_view_id" ref="view_pos_salary_payment_search"/>
+            <field name="context">{'search_default_group_date': 1, 'search_default_group_partner_id': 1}</field>
+        </record>
+
+        <menuitem id="menu_pos_salary_payment"
+                  name="Salary Payment"
+                  action="action_pos_salary_payment"
+                  parent="sultana_base.menu_pos_parent_employees"
+                  sequence="20"
+        />
+
+    </data>
+</odoo>

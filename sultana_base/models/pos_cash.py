@@ -5,6 +5,7 @@ from odoo import models, fields, api, _
 class PosCash(models.Model):
     _name = 'pos.cash'
     _description = 'POS Cash'
+    _order = 'date desc'
 
     name = fields.Char(required=True)
     currency_id = fields.Many2one('res.currency', default=lambda self: self.env.company.currency_id, required=True)

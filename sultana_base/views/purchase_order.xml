@@ -60,13 +60,6 @@
                   parent="menu_purchase_orders"
                   sequence="0"
         />
-        <menuitem id="menu_pos_supplier"
-                  name="Vendors"
-                  parent="menu_purchase_orders"
-                  action="account.res_partner_action_supplier"
-                  sequence="10"
-        />
-
 
     </data>
 </odoo>

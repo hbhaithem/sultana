@@ -28,11 +28,13 @@
         'views/product_views.xml',
         'views/pos_order_line_views.xml',
         'views/account_move.xml',
-        'views/res_partner.xml',
         'views/pos_category_views.xml',
         'views/pos_order_views.xml',
         'views/pos_cash_views.xml',
+        'views/res_partner.xml',
+        'views/pos_salary_payment_views.xml',
         'wizard/pos_profit_loss_details_wizard.xml',
+        'wizard/employee_salary_wizard.xml',
     ],
     'assets': {
         'point_of_sale._assets_pos': [
