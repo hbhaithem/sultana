@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-27 20:06+0000\n"
-"PO-Revision-Date: 2024-11-27 20:06+0000\n"
+"POT-Creation-Date: 2024-12-14 14:00+0000\n"
+"PO-Revision-Date: 2024-12-14 14:00+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -22,6 +22,17 @@ msgid "A storable product is a product for which you manage stock."
 msgstr "Un produit stockable est un produit pour lequel vous gérez un stock."
 
 #. module: sultana_base
+#: model:ir.model.fields,field_description:sultana_base.field_pos_cash__amount
+msgid "Amount"
+msgstr "Montant"
+
+#. module: sultana_base
+#: model:ir.model.fields,field_description:sultana_base.field_product_product__available_in_pos
+#: model:ir.model.fields,field_description:sultana_base.field_product_template__available_in_pos
+msgid "Available in POS"
+msgstr "Disponible dans le PdV"
+
+#. module: sultana_base
 #: model_terms:ir.ui.view,arch_db:sultana_base.view_pos_order_line_form
 msgid "Calculations"
 msgstr "Calculs"
@@ -31,6 +42,12 @@ msgstr "Calculs"
 #: model:ir.ui.menu,name:sultana_base.menu_orders_pos_category_configuration
 msgid "Categories"
 msgstr "Catégories"
+
+#. module: sultana_base
+#: model:ir.model.fields,help:sultana_base.field_product_product__available_in_pos
+#: model:ir.model.fields,help:sultana_base.field_product_template__available_in_pos
+msgid "Check if you want this product to appear in the Point of Sale."
+msgstr "Cochez cette case si vous souhaitez faire apparaître ce produit dans le Point de Vente"
 
 #. module: sultana_base
 #. odoo-python
@@ -44,16 +61,24 @@ msgid "Close"
 msgstr "Fermer"
 
 #. module: sultana_base
+#: model_terms:ir.ui.view,arch_db:sultana_base.view_pos_order_line_search
+msgid "Create Date"
+msgstr "Date de Création"
+
+#. module: sultana_base
+#: model:ir.model.fields,field_description:sultana_base.field_pos_cash__create_uid
 #: model:ir.model.fields,field_description:sultana_base.field_pos_profit_loss_details_wizard__create_uid
 msgid "Created by"
 msgstr "Créé par"
 
 #. module: sultana_base
+#: model:ir.model.fields,field_description:sultana_base.field_pos_cash__create_date
 #: model:ir.model.fields,field_description:sultana_base.field_pos_profit_loss_details_wizard__create_date
 msgid "Created on"
 msgstr "Créé le"
 
 #. module: sultana_base
+#: model:ir.model.fields,field_description:sultana_base.field_pos_cash__currency_id
 #: model:ir.model.fields,field_description:sultana_base.field_pos_profit_loss_details_wizard__currency_id
 msgid "Currency"
 msgstr "Devise"
@@ -64,6 +89,12 @@ msgid "Customer"
 msgstr "Client"
 
 #. module: sultana_base
+#: model:ir.model.fields,field_description:sultana_base.field_pos_cash__date
+msgid "Date"
+msgstr "Date"
+
+#. module: sultana_base
+#: model:ir.model.fields,field_description:sultana_base.field_pos_cash__display_name
 #: model:ir.model.fields,field_description:sultana_base.field_pos_profit_loss_details_wizard__display_name
 msgid "Display Name"
 msgstr "Nom d'affichage"
@@ -79,19 +110,15 @@ msgid "Generate"
 msgstr "Générer"
 
 #. module: sultana_base
-#: model:ir.model.fields,field_description:sultana_base.field_pos_category__generate_ref
-msgid "Generate Reference"
-msgstr "Générer une référence"
-
-#. module: sultana_base
 #: model_terms:ir.ui.view,arch_db:sultana_base.view_pos_order_line_search
 msgid "Group By"
 msgstr "Grouper par"
 
 #. module: sultana_base
+#: model:ir.model.fields,field_description:sultana_base.field_pos_cash__id
 #: model:ir.model.fields,field_description:sultana_base.field_pos_profit_loss_details_wizard__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: sultana_base
 #: model:ir.ui.menu,name:sultana_base.menu_pos_invoicing
@@ -99,11 +126,13 @@ msgid "Invoicing"
 msgstr "Facturation"
 
 #. module: sultana_base
+#: model:ir.model.fields,field_description:sultana_base.field_pos_cash__write_uid
 #: model:ir.model.fields,field_description:sultana_base.field_pos_profit_loss_details_wizard__write_uid
 msgid "Last Updated by"
 msgstr "Dernière mise à jour par"
 
 #. module: sultana_base
+#: model:ir.model.fields,field_description:sultana_base.field_pos_cash__write_date
 #: model:ir.model.fields,field_description:sultana_base.field_pos_profit_loss_details_wizard__write_date
 msgid "Last Updated on"
 msgstr "Dernière mise à jour le"
@@ -112,6 +141,11 @@ msgstr "Dernière mise à jour le"
 #: model_terms:ir.ui.view,arch_db:sultana_base.view_pos_order_line_list
 msgid "Margin"
 msgstr "Marge"
+
+#. module: sultana_base
+#: model:ir.model.fields,field_description:sultana_base.field_pos_cash__name
+msgid "Name"
+msgstr "Description"
 
 #. module: sultana_base
 #: model:ir.actions.act_window,name:sultana_base.pos_purchase_rfq
@@ -124,6 +158,23 @@ msgstr "Ordres"
 #: model:ir.ui.menu,name:sultana_base.menu_report_pos_order_lines_all
 msgid "Orders Analysis"
 msgstr "Analyse des commandes"
+
+#. module: sultana_base
+#: model:ir.model,name:sultana_base.model_pos_cash
+msgid "POS Cash"
+msgstr "Encaissement PDV"
+
+#. module: sultana_base
+#: model:ir.actions.act_window,name:sultana_base.action_pos_cash_out_in
+#: model_terms:ir.ui.view,arch_db:sultana_base.pos_cash_out_in_form_view
+#: model_terms:ir.ui.view,arch_db:sultana_base.pos_cash_out_in_list_view
+msgid "POS Cash Out/In"
+msgstr "Encaissement/retrait PDV"
+
+#. module: sultana_base
+#: model:ir.ui.menu,name:sultana_base.menu_pos_cash_out_in
+msgid "POS Cash out/in"
+msgstr "Encaissement/retrait PDV"
 
 #. module: sultana_base
 #: model_terms:ir.ui.view,arch_db:sultana_base.view_pos_order_line_form
@@ -146,6 +197,21 @@ msgid "Point of Sale Category"
 msgstr "Catégorie du point de vente"
 
 #. module: sultana_base
+#: model:ir.model,name:sultana_base.model_pos_config
+msgid "Point of Sale Configuration"
+msgstr "Configuration du point de vente"
+
+#. module: sultana_base
+#: model:ir.model,name:sultana_base.model_pos_session
+msgid "Point of Sale Session"
+msgstr "Session du point de vente"
+
+#. module: sultana_base
+#: model:ir.model.fields,field_description:sultana_base.field_pos_cash__pos_session_id
+msgid "Pos Session"
+msgstr "Session PDV"
+
+#. module: sultana_base
 #: model_terms:ir.ui.view,arch_db:sultana_base.view_pos_order_line_form
 msgid "Price and Quantity"
 msgstr "Prix et Quantité"
@@ -156,6 +222,11 @@ msgstr "Prix et Quantité"
 #: model_terms:ir.ui.view,arch_db:sultana_base.view_pos_order_line_search
 msgid "Product"
 msgstr "Produit"
+
+#. module: sultana_base
+#: model:ir.model.fields,field_description:sultana_base.field_pos_profit_loss_details_wizard__product_ids
+msgid "Products"
+msgstr "Produits"
 
 #. module: sultana_base
 #: model:ir.model.fields,field_description:sultana_base.field_pos_profit_loss_details_wizard__profit_loss
@@ -205,6 +276,17 @@ msgid "Start Date"
 msgstr "Date de début"
 
 #. module: sultana_base
+#: model:ir.model.fields,field_description:sultana_base.field_pos_cash__statement_line_ids
+msgid "Statement Line"
+msgstr "Ligne de relevé"
+
+#. module: sultana_base
+#: model:ir.model.fields,field_description:sultana_base.field_product_product__is_storable
+#: model:ir.model.fields,field_description:sultana_base.field_product_template__is_storable
+msgid "Storable"
+msgstr "Stockable"
+
+#. module: sultana_base
 #: model_terms:ir.ui.view,arch_db:sultana_base.view_pos_order_line_form
 #: model_terms:ir.ui.view,arch_db:sultana_base.view_pos_order_line_list
 msgid "Subtotal"
@@ -221,6 +303,13 @@ msgid "Supplier"
 msgstr "Fournisseur"
 
 #. module: sultana_base
+#. odoo-python
+#: code:addons/sultana_base/models/pos_session.py:0
+msgid "There is no cash payment method for this PoS Session"
+msgstr "Il n'y a pas de mode de paiement en espèces pour cette session du point de vente."
+
+#. module: sultana_base
+#: model_terms:ir.ui.view,arch_db:sultana_base.pos_cash_out_in_list_view
 #: model_terms:ir.ui.view,arch_db:sultana_base.view_pos_order_line_list
 msgid "Total"
 msgstr "Total"
@@ -241,23 +330,6 @@ msgid "Total Quantity"
 msgstr "Quantité Totale"
 
 #. module: sultana_base
-#: model:ir.model.fields,field_description:sultana_base.field_product_product__is_storable
-#: model:ir.model.fields,field_description:sultana_base.field_product_template__is_storable
-msgid "Track Inventory"
-msgstr "Suivre l'inventaire"
-
-#. module: sultana_base
 #: model:ir.ui.menu,name:sultana_base.menu_pos_supplier
 msgid "Vendors"
 msgstr "Fournisseurs"
-
-#. module: sultana_base
-#: model_terms:ir.ui.view,arch_db:sultana_base.view_pos_order_line_search
-msgid "Create Date"
-msgstr "Date de Création"
-
-#. module: sultana_base
-#: model:ir.model.fields,field_description:sultana_base.field_product_product__is_storable
-#: model:ir.model.fields,field_description:sultana_base.field_product_template__is_storable
-msgid "Storable"
-msgstr "Stockable"

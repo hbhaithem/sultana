@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+
+        <record id="pos_cash_out_in_list_view" model="ir.ui.view">
+            <field name="name">pos.cash.out.in.list</field>
+            <field name="model">pos.cash</field>
+            <field name="arch" type="xml">
+                <list string="POS Cash Out/In">
+                    <field name="date"/>
+                    <field name="name"/>
+                    <field name="pos_session_id"/>
+                    <field name="currency_id" invisible="1"/>
+                    <field name="amount" sum="Total"/>
+                </list>
+            </field>
+        </record>
+
+        <record id="pos_cash_out_in_form_view" model="ir.ui.view">
+            <field name="name">pos.cash.out.in.form</field>
+            <field name="model">pos.cash</field>
+            <field name="arch" type="xml">
+                <form string="POS Cash Out/In">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name" required="1"/>
+                                <field name="amount" required="1"/>
+                                <field name="currency_id" invisible="1"/>
+                            </group>
+                            <group>
+                                <field name="date" required="1"/>
+                                <field name="pos_session_id" required="1"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_pos_cash_out_in" model="ir.actions.act_window">
+            <field name="name">POS Cash Out/In</field>
+            <field name="res_model">pos.cash</field>
+            <field name="view_mode">list,form</field>
+            <field name="context">{'group_by':[]}</field>
+        </record>
+
+        <menuitem id="menu_pos_cash_out_in"
+                  name="POS Cash out/in"
+                  parent="point_of_sale.menu_point_of_sale"
+                  sequence="20"
+                  action="action_pos_cash_out_in"
+                  groups="sultana_base.group_super_manager"
+        />
+
+    </data>
+</odoo>

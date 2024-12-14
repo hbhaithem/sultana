@@ -31,6 +31,7 @@
         'views/res_partner.xml',
         'views/pos_category_views.xml',
         'views/pos_order_views.xml',
+        'views/pos_cash_views.xml',
         'wizard/pos_profit_loss_details_wizard.xml',
     ],
     'assets': {
