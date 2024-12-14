@@ -11,6 +11,7 @@ class PosCash(models.Model):
     amount = fields.Monetary(currency_field='currency_id')
     date = fields.Date(default=fields.Date.context_today, required=True)
     pos_session_id = fields.Many2one('pos.session', required=True)
+    user_id = fields.Many2one(related='pos_session_id.user_id')
     statement_line_ids = fields.Many2one('account.bank.statement.line')
 
     @api.model_create_multi
