@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <record id="view_pos_profit_loss_details_wizard" model="ir.ui.view">
-        <field name="name">employee.salary.wizard.form</field>
-        <field name="model">employee.salary.wizard</field>
-        <field name="arch" type="xml">
-            <form string="Salary Payment">
-                <group>
-                    <field name="partner_id" readonly="1"/>
-                    <field name="salary"/>
-                </group>
-                <footer>
-                    <button string="Confirm" name="action_create_salary_payment" type="object"
-                            class="print btn-primary"/>
-                    <button string="Close" class="btn-secondary" special="cancel"/>
-                </footer>
-            </form>
-        </field>
-    </record>
+    <data>
 
+        <record id="view_employee_salary_wizard" model="ir.ui.view">
+            <field name="name">employee.salary.wizard.form</field>
+            <field name="model">employee.salary.wizard</field>
+            <field name="arch" type="xml">
+                <form string="Salary Payment">
+                    <group>
+                        <field name="partner_id" readonly="1"/>
+                        <field name="salary"/>
+                    </group>
+                    <footer>
+                        <button string="Confirm" name="action_create_salary_payment" type="object"
+                                class="print btn-primary"/>
+                        <button string="Close" class="btn-secondary" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+    </data>
 </odoo>
