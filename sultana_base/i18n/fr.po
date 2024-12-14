@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-14 14:00+0000\n"
-"PO-Revision-Date: 2024-12-14 14:00+0000\n"
+"POT-Creation-Date: 2024-12-14 16:59+0000\n"
+"PO-Revision-Date: 2024-12-14 16:59+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -16,15 +16,64 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: sultana_base
+#: model_terms:ir.ui.view,arch_db:sultana_base.view_partner_form
+msgid "/month"
+msgstr "/mois"
+
+#. module: sultana_base
+#: model_terms:ir.ui.view,arch_db:sultana_base.view_partner_form
+msgid ""
+"<span class=\"o_form_label o_td_label o_address_type\" name=\"address_name\">\n"
+"                                    <span invisible=\"not is_company\">Address</span>\n"
+"                                </span>"
+msgstr ""
+"<span class=\"o_form_label o_td_label o_address_type\" name=\"address_name\">\n"
+"                                    <span invisible=\"not is_company\">Adresse</span>\n"
+"                                </span>"
+
+#. module: sultana_base
+#: model_terms:ir.ui.view,arch_db:sultana_base.view_partner_form
+msgid "<span>Contact sub-addresses.</span>"
+msgstr "<span>Sous-adresses de contact.</span>"
+
+#. module: sultana_base
+#: model_terms:ir.ui.view,arch_db:sultana_base.view_partner_form
+msgid "<span>Deliveries address.</span>"
+msgstr "<span>Adresse de livraison.</span>"
+
+#. module: sultana_base
+#: model_terms:ir.ui.view,arch_db:sultana_base.view_partner_form
+msgid "<span>Invoices address.</span>"
+msgstr "<span>Adresse des factures.</span>"
+
+#. module: sultana_base
+#: model_terms:ir.ui.view,arch_db:sultana_base.view_partner_form
+msgid "<span>Other address for the contact.</span>"
+msgstr "<span>Other address for the contact.</span>"
+
+#. module: sultana_base
 #: model:ir.model.fields,help:sultana_base.field_product_product__is_storable
 #: model:ir.model.fields,help:sultana_base.field_product_template__is_storable
 msgid "A storable product is a product for which you manage stock."
 msgstr "Un produit stockable est un produit pour lequel vous gérez un stock."
 
 #. module: sultana_base
+#: model_terms:ir.ui.view,arch_db:sultana_base.view_partner_form
+msgid "Address"
+msgstr "Adresse"
+
+#. module: sultana_base
 #: model:ir.model.fields,field_description:sultana_base.field_pos_cash__amount
+#: model:ir.model.fields,field_description:sultana_base.field_pos_salary_payment__amount
 msgid "Amount"
 msgstr "Montant"
+
+#. module: sultana_base
+#: model_terms:ir.ui.view,arch_db:sultana_base.res_partner_kanban_view
+#: model_terms:ir.ui.view,arch_db:sultana_base.view_partner_form
+#: model_terms:ir.ui.view,arch_db:sultana_base.view_res_partner_filter
+msgid "Archived"
+msgstr "Archivé"
 
 #. module: sultana_base
 #: model:ir.model.fields,field_description:sultana_base.field_product_product__available_in_pos
@@ -56,9 +105,57 @@ msgid "Check out the dates"
 msgstr "Consultez les dates"
 
 #. module: sultana_base
+#: model_terms:ir.ui.view,arch_db:sultana_base.view_partner_form
+msgid "City"
+msgstr "Ville"
+
+#. module: sultana_base
+#: model_terms:ir.ui.view,arch_db:sultana_base.view_employee_salary_wizard
 #: model_terms:ir.ui.view,arch_db:sultana_base.view_pos_profit_loss_details_wizard
 msgid "Close"
 msgstr "Fermer"
+
+#. module: sultana_base
+#: model_terms:ir.ui.view,arch_db:sultana_base.view_employee_salary_wizard
+msgid "Confirm"
+msgstr "Confirmer"
+
+#. module: sultana_base
+#: model:ir.model,name:sultana_base.model_res_partner
+msgid "Contact"
+msgstr "Contact"
+
+#. module: sultana_base
+#: model_terms:ir.ui.view,arch_db:sultana_base.view_partner_form
+msgid "Contact / Address"
+msgstr "Contact / Adresse"
+
+#. module: sultana_base
+#: model_terms:ir.ui.view,arch_db:sultana_base.view_partner_form
+msgid "Contact Name"
+msgstr "Nom du contact"
+
+#. module: sultana_base
+#: model_terms:ir.ui.view,arch_db:sultana_base.res_partner_kanban_view
+#: model_terms:ir.ui.view,arch_db:sultana_base.view_partner_form
+msgid "Contact image"
+msgstr "Image du contact"
+
+#. module: sultana_base
+#: model_terms:ir.ui.view,arch_db:sultana_base.view_partner_tree
+msgid "Contacts"
+msgstr "Contacts"
+
+#. module: sultana_base
+#: model_terms:ir.ui.view,arch_db:sultana_base.view_partner_form
+msgid "Contacts And Addresses"
+msgstr "Contacts et adresses"
+
+#. module: sultana_base
+#: model_terms:ir.ui.view,arch_db:sultana_base.view_partner_form
+#: model_terms:ir.ui.view,arch_db:sultana_base.view_res_partner_filter
+msgid "Country"
+msgstr "Pays"
 
 #. module: sultana_base
 #: model_terms:ir.ui.view,arch_db:sultana_base.view_pos_order_line_search
@@ -66,20 +163,26 @@ msgid "Create Date"
 msgstr "Date de Création"
 
 #. module: sultana_base
+#: model:ir.model.fields,field_description:sultana_base.field_employee_salary_wizard__create_uid
 #: model:ir.model.fields,field_description:sultana_base.field_pos_cash__create_uid
 #: model:ir.model.fields,field_description:sultana_base.field_pos_profit_loss_details_wizard__create_uid
+#: model:ir.model.fields,field_description:sultana_base.field_pos_salary_payment__create_uid
 msgid "Created by"
 msgstr "Créé par"
 
 #. module: sultana_base
+#: model:ir.model.fields,field_description:sultana_base.field_employee_salary_wizard__create_date
 #: model:ir.model.fields,field_description:sultana_base.field_pos_cash__create_date
 #: model:ir.model.fields,field_description:sultana_base.field_pos_profit_loss_details_wizard__create_date
+#: model:ir.model.fields,field_description:sultana_base.field_pos_salary_payment__create_date
 msgid "Created on"
 msgstr "Créé le"
 
 #. module: sultana_base
+#: model:ir.model.fields,field_description:sultana_base.field_employee_salary_wizard__currency_id
 #: model:ir.model.fields,field_description:sultana_base.field_pos_cash__currency_id
 #: model:ir.model.fields,field_description:sultana_base.field_pos_profit_loss_details_wizard__currency_id
+#: model:ir.model.fields,field_description:sultana_base.field_pos_salary_payment__currency_id
 msgid "Currency"
 msgstr "Devise"
 
@@ -89,15 +192,51 @@ msgid "Customer"
 msgstr "Client"
 
 #. module: sultana_base
+#: model:ir.model.fields,field_description:sultana_base.field_res_partner__property_payment_term_id
+#: model:ir.model.fields,field_description:sultana_base.field_res_users__property_payment_term_id
+msgid "Customer Payment Terms"
+msgstr "Conditions de paiement du client"
+
+#. module: sultana_base
+#: model:ir.actions.act_window,name:sultana_base.action_customer
+msgid "Customers"
+msgstr "Clients"
+
+#. module: sultana_base
 #: model:ir.model.fields,field_description:sultana_base.field_pos_cash__date
+#: model:ir.model.fields,field_description:sultana_base.field_pos_salary_payment__date
+#: model_terms:ir.ui.view,arch_db:sultana_base.view_pos_salary_payment_search
 msgid "Date"
 msgstr "Date"
 
 #. module: sultana_base
+#: model:ir.model.fields,field_description:sultana_base.field_employee_salary_wizard__display_name
 #: model:ir.model.fields,field_description:sultana_base.field_pos_cash__display_name
 #: model:ir.model.fields,field_description:sultana_base.field_pos_profit_loss_details_wizard__display_name
+#: model:ir.model.fields,field_description:sultana_base.field_pos_salary_payment__display_name
 msgid "Display Name"
 msgstr "Nom d'affichage"
+
+#. module: sultana_base
+#: model:ir.model.fields,field_description:sultana_base.field_employee_salary_wizard__partner_id
+#: model:ir.model.fields,field_description:sultana_base.field_pos_salary_payment__partner_id
+#: model:ir.model.fields,field_description:sultana_base.field_res_partner__is_employee
+#: model:ir.model.fields,field_description:sultana_base.field_res_users__is_employee
+#: model_terms:ir.ui.view,arch_db:sultana_base.view_pos_salary_payment_search
+msgid "Employee"
+msgstr "Employé"
+
+#. module: sultana_base
+#: model:ir.model,name:sultana_base.model_employee_salary_wizard
+msgid "Employee Salary Wizard"
+msgstr "Assistant de salaire des employés"
+
+#. module: sultana_base
+#: model:ir.actions.act_window,name:sultana_base.action_employee
+#: model:ir.ui.menu,name:sultana_base.menu_pos_employees
+#: model:ir.ui.menu,name:sultana_base.menu_pos_parent_employees
+msgid "Employees"
+msgstr "Employés"
 
 #. module: sultana_base
 #: model:ir.model.fields,field_description:sultana_base.field_pos_profit_loss_details_wizard__end_date
@@ -111,14 +250,28 @@ msgstr "Générer"
 
 #. module: sultana_base
 #: model_terms:ir.ui.view,arch_db:sultana_base.view_pos_order_line_search
+#: model_terms:ir.ui.view,arch_db:sultana_base.view_pos_salary_payment_search
+#: model_terms:ir.ui.view,arch_db:sultana_base.view_res_partner_filter
 msgid "Group By"
 msgstr "Grouper par"
 
 #. module: sultana_base
+#: model:ir.model.fields,field_description:sultana_base.field_employee_salary_wizard__id
 #: model:ir.model.fields,field_description:sultana_base.field_pos_cash__id
 #: model:ir.model.fields,field_description:sultana_base.field_pos_profit_loss_details_wizard__id
+#: model:ir.model.fields,field_description:sultana_base.field_pos_salary_payment__id
 msgid "ID"
 msgstr "ID"
+
+#. module: sultana_base
+#: model_terms:ir.ui.view,arch_db:sultana_base.view_partner_form
+msgid "Internal Notes"
+msgstr "Notes internes"
+
+#. module: sultana_base
+#: model_terms:ir.ui.view,arch_db:sultana_base.view_partner_form
+msgid "Internal notes..."
+msgstr "Notes internes..."
 
 #. module: sultana_base
 #: model:ir.ui.menu,name:sultana_base.menu_pos_invoicing
@@ -126,14 +279,18 @@ msgid "Invoicing"
 msgstr "Facturation"
 
 #. module: sultana_base
+#: model:ir.model.fields,field_description:sultana_base.field_employee_salary_wizard__write_uid
 #: model:ir.model.fields,field_description:sultana_base.field_pos_cash__write_uid
 #: model:ir.model.fields,field_description:sultana_base.field_pos_profit_loss_details_wizard__write_uid
+#: model:ir.model.fields,field_description:sultana_base.field_pos_salary_payment__write_uid
 msgid "Last Updated by"
 msgstr "Dernière mise à jour par"
 
 #. module: sultana_base
+#: model:ir.model.fields,field_description:sultana_base.field_employee_salary_wizard__write_date
 #: model:ir.model.fields,field_description:sultana_base.field_pos_cash__write_date
 #: model:ir.model.fields,field_description:sultana_base.field_pos_profit_loss_details_wizard__write_date
+#: model:ir.model.fields,field_description:sultana_base.field_pos_salary_payment__write_date
 msgid "Last Updated on"
 msgstr "Dernière mise à jour le"
 
@@ -143,9 +300,25 @@ msgid "Margin"
 msgstr "Marge"
 
 #. module: sultana_base
+#: model_terms:ir.ui.view,arch_db:sultana_base.view_partner_form
+msgid "Mobile:"
+msgstr "Mobile :"
+
+#. module: sultana_base
 #: model:ir.model.fields,field_description:sultana_base.field_pos_cash__name
+#: model_terms:ir.ui.view,arch_db:sultana_base.view_partner_tree
 msgid "Name"
 msgstr "Description"
+
+#. module: sultana_base
+#: model_terms:ir.ui.view,arch_db:sultana_base.view_partner_form
+msgid "Name..."
+msgstr "Nom..."
+
+#. module: sultana_base
+#: model:ir.model.fields,field_description:sultana_base.field_pos_cash__user_id
+msgid "Opened By"
+msgstr "Ouvert par"
 
 #. module: sultana_base
 #: model:ir.actions.act_window,name:sultana_base.pos_purchase_rfq
@@ -187,6 +360,38 @@ msgid "POS Orders lines"
 msgstr "Lignes d'ordres"
 
 #. module: sultana_base
+#: model_terms:ir.ui.view,arch_db:sultana_base.view_partner_form
+msgid "Partners"
+msgstr "Partenaires"
+
+#. module: sultana_base
+#. odoo-python
+#: code:addons/sultana_base/models/res_partner.py:0
+#: model_terms:ir.ui.view,arch_db:sultana_base.view_partner_form
+msgid "Pay Salary"
+msgstr "Payer le salaire"
+
+#. module: sultana_base
+#: model:ir.model.fields,field_description:sultana_base.field_employee_salary_wizard__salary
+msgid "Payment"
+msgstr "Paiement"
+
+#. module: sultana_base
+#: model_terms:ir.ui.view,arch_db:sultana_base.view_partner_form
+msgid "Payment Method"
+msgstr "Mode de paiement"
+
+#. module: sultana_base
+#: model_terms:ir.ui.view,arch_db:sultana_base.view_partner_form
+msgid "Payment Terms"
+msgstr "Conditions de paiement"
+
+#. module: sultana_base
+#: model_terms:ir.ui.view,arch_db:sultana_base.view_partner_form
+msgid "Phone:"
+msgstr "Téléphone :"
+
+#. module: sultana_base
 #: model_terms:ir.ui.view,arch_db:sultana_base.view_pos_order_line_search
 msgid "Point of Sale Analysis"
 msgstr "Analyse Point de Vente"
@@ -210,6 +415,28 @@ msgstr "Session du point de vente"
 #: model:ir.model.fields,field_description:sultana_base.field_pos_cash__pos_session_id
 msgid "Pos Session"
 msgstr "Session PDV"
+
+#. module: sultana_base
+#: model:ir.model.fields,help:sultana_base.field_res_partner__property_outbound_payment_method_line_id
+#: model:ir.model.fields,help:sultana_base.field_res_users__property_outbound_payment_method_line_id
+msgid ""
+"Preferred payment method when buying from this vendor. This will be set by "
+"default on all outgoing payments created for this vendor"
+msgstr ""
+"Mode de paiement préféré pour les achats effectués auprès de ce fournisseur."
+" Ce mode de paiement sera utilisé par défaut pour tous les paiements "
+"sortants créés pour ce fournisseur."
+
+#. module: sultana_base
+#: model:ir.model.fields,help:sultana_base.field_res_partner__property_inbound_payment_method_line_id
+#: model:ir.model.fields,help:sultana_base.field_res_users__property_inbound_payment_method_line_id
+msgid ""
+"Preferred payment method when selling to this customer. This will be set by "
+"default on all incoming payments created for this customer"
+msgstr ""
+"Mode de paiement préféré pour les ventes effectuées à ce client. Ce mode de "
+"paiement sera utilisé par défaut pour tous les paiements entrants créés pour"
+" ce client."
 
 #. module: sultana_base
 #: model_terms:ir.ui.view,arch_db:sultana_base.view_pos_order_line_form
@@ -246,7 +473,20 @@ msgid "Profit/Loss Details Report"
 msgstr "Rapport détaillé sur les profits/pertes"
 
 #. module: sultana_base
+#: model:ir.model.fields,field_description:sultana_base.field_res_partner__property_inbound_payment_method_line_id
+#: model:ir.model.fields,field_description:sultana_base.field_res_users__property_inbound_payment_method_line_id
+msgid "Property Inbound Payment Method Line"
+msgstr "Ligne de mode de paiement des biens entrants"
+
+#. module: sultana_base
+#: model:ir.model.fields,field_description:sultana_base.field_res_partner__property_outbound_payment_method_line_id
+#: model:ir.model.fields,field_description:sultana_base.field_res_users__property_outbound_payment_method_line_id
+msgid "Property Outbound Payment Method Line"
+msgstr "Ligne de mode de paiement des biens sortants"
+
+#. module: sultana_base
 #: model:ir.ui.menu,name:sultana_base.menu_purchase_orders
+#: model_terms:ir.ui.view,arch_db:sultana_base.view_partner_form
 msgid "Purchase"
 msgstr "Achat"
 
@@ -271,9 +511,57 @@ msgid "Results"
 msgstr "Résultats"
 
 #. module: sultana_base
+#: model:ir.model.fields,field_description:sultana_base.field_res_partner__salary
+#: model:ir.model.fields,field_description:sultana_base.field_res_users__salary
+msgid "Salary"
+msgstr "Salaire"
+
+#. module: sultana_base
+#: model:ir.actions.act_window,name:sultana_base.action_pos_salary_payment
+#: model:ir.ui.menu,name:sultana_base.menu_pos_salary_payment
+#: model_terms:ir.ui.view,arch_db:sultana_base.view_employee_salary_wizard
+#: model_terms:ir.ui.view,arch_db:sultana_base.view_partner_form
+#: model_terms:ir.ui.view,arch_db:sultana_base.view_pos_salary_payment_form
+#: model_terms:ir.ui.view,arch_db:sultana_base.view_pos_salary_payment_list
+msgid "Salary Payment"
+msgstr "Paiement du Salaire"
+
+#. module: sultana_base
+#. odoo-python
+#: code:addons/sultana_base/models/res_partner.py:0
+#: code:addons/sultana_base/wizard/employee_salary_wizard.py:0
+msgid "Salary Payments"
+msgstr "Paiements du Salaire"
+
+#. module: sultana_base
+#: model_terms:ir.ui.view,arch_db:sultana_base.view_partner_form
+msgid "Sales"
+msgstr "Vente"
+
+#. module: sultana_base
+#: model_terms:ir.ui.view,arch_db:sultana_base.view_partner_form
+msgid "Sales And Purchase"
+msgstr "Ventes et Achats"
+
+#. module: sultana_base
+#: model_terms:ir.ui.view,arch_db:sultana_base.view_res_partner_filter
+msgid "Search Partner"
+msgstr "Rechercher un partenaire"
+
+#. module: sultana_base
+#: model_terms:ir.ui.view,arch_db:sultana_base.view_pos_salary_payment_search
+msgid "Search Salary Payment"
+msgstr "Recherche de paiement de salaire"
+
+#. module: sultana_base
 #: model:ir.model.fields,field_description:sultana_base.field_pos_profit_loss_details_wizard__start_date
 msgid "Start Date"
 msgstr "Date de début"
+
+#. module: sultana_base
+#: model_terms:ir.ui.view,arch_db:sultana_base.view_partner_form
+msgid "State"
+msgstr "État"
 
 #. module: sultana_base
 #: model:ir.model.fields,field_description:sultana_base.field_pos_cash__statement_line_ids
@@ -285,6 +573,16 @@ msgstr "Ligne de relevé"
 #: model:ir.model.fields,field_description:sultana_base.field_product_template__is_storable
 msgid "Storable"
 msgstr "Stockable"
+
+#. module: sultana_base
+#: model_terms:ir.ui.view,arch_db:sultana_base.view_partner_form
+msgid "Street 2..."
+msgstr "Rue 2..."
+
+#. module: sultana_base
+#: model_terms:ir.ui.view,arch_db:sultana_base.view_partner_form
+msgid "Street..."
+msgstr "Rue..."
 
 #. module: sultana_base
 #: model_terms:ir.ui.view,arch_db:sultana_base.view_pos_order_line_form
@@ -303,14 +601,42 @@ msgid "Supplier"
 msgstr "Fournisseur"
 
 #. module: sultana_base
+#: model:ir.actions.act_window,name:sultana_base.action_supplier
+msgid "Suppliers"
+msgstr "Fournisseurs"
+
+#. module: sultana_base
 #. odoo-python
 #: code:addons/sultana_base/models/pos_session.py:0
 msgid "There is no cash payment method for this PoS Session"
-msgstr "Il n'y a pas de mode de paiement en espèces pour cette session du point de vente."
+msgstr ""
+"Il n'y a pas de mode de paiement en espèces pour cette session du point de "
+"vente."
+
+#. module: sultana_base
+#: model:ir.model.fields,help:sultana_base.field_res_partner__property_supplier_payment_term_id
+#: model:ir.model.fields,help:sultana_base.field_res_users__property_supplier_payment_term_id
+msgid ""
+"This payment term will be used instead of the default one for purchase "
+"orders and vendor bills"
+msgstr ""
+"Cette condition de paiement sera utilisé à la place de celui par défaut pour"
+" les bons de commande et les factures fournisseurs"
+
+#. module: sultana_base
+#: model:ir.model.fields,help:sultana_base.field_res_partner__property_payment_term_id
+#: model:ir.model.fields,help:sultana_base.field_res_users__property_payment_term_id
+msgid ""
+"This payment term will be used instead of the default one for sales orders "
+"and customer invoices"
+msgstr ""
+"Ce délai de paiement sera utilisé à la place de celui par défaut pour les "
+"commandes et les factures clients"
 
 #. module: sultana_base
 #: model_terms:ir.ui.view,arch_db:sultana_base.pos_cash_out_in_list_view
 #: model_terms:ir.ui.view,arch_db:sultana_base.view_pos_order_line_list
+#: model_terms:ir.ui.view,arch_db:sultana_base.view_pos_salary_payment_list
 msgid "Total"
 msgstr "Total"
 
@@ -330,6 +656,32 @@ msgid "Total Quantity"
 msgstr "Quantité Totale"
 
 #. module: sultana_base
+#: model_terms:ir.ui.view,arch_db:sultana_base.view_partner_form
+msgid "VIP, Consulting, ..."
+msgstr "VIP, Conseil, ..."
+
+#. module: sultana_base
+#: model:ir.model.fields,field_description:sultana_base.field_res_partner__property_supplier_payment_term_id
+#: model:ir.model.fields,field_description:sultana_base.field_res_users__property_supplier_payment_term_id
+msgid "Vendor Payment Terms"
+msgstr "Conditions de paiement du fournisseur"
+
+#. module: sultana_base
 #: model:ir.ui.menu,name:sultana_base.menu_pos_supplier
 msgid "Vendors"
 msgstr "Fournisseurs"
+
+#. module: sultana_base
+#: model_terms:ir.ui.view,arch_db:sultana_base.view_partner_form
+msgid "ZIP"
+msgstr "Code postal"
+
+#. module: sultana_base
+#: model_terms:ir.ui.view,arch_db:sultana_base.view_partner_form
+msgid "e.g. Mister"
+msgstr "par ex. Monsieur"
+
+#. module: sultana_base
+#: model:ir.model,name:sultana_base.model_pos_salary_payment
+msgid "pos.salary.payment"
+msgstr "PDV Salary Payment"

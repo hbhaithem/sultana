@@ -96,12 +96,12 @@
             <field name="priority" eval="1"/>
             <field name="arch" type="xml">
                 <form string="Partners">
-                    <header>
+                    <header groups="sultana_base.group_super_manager">
                         <button name="action_open_salary_wizard" string="Pay Salary" class="oe_highlight" type="object"
                                 invisible="not is_employee"/>
                     </header>
                     <sheet>
-                        <div class="oe_button_box" name="button_box">
+                        <div class="oe_button_box" name="button_box" groups="sultana_base.group_super_manager">
                             <button icon="fa-bars" name="action_open_salary_payment" string="Salary Payment"
                                     class="oe_highlight" type="object" invisible="not is_employee"/>
                         </div>
@@ -140,8 +140,8 @@
                                 <field name="ref"/>
                                 <field name="is_employee"/>
                                 <field name="currency_id" invisible="1"/>
-                                <label for="salary"/>
-                                <div class="o_row">
+                                <label for="salary" groups="sultana_base.group_super_manager"/>
+                                <div class="o_row" groups="sultana_base.group_super_manager">
                                     <field name="salary"/>
                                     <div class="text-muted ms-2">/month</div>
                                 </div>
@@ -337,6 +337,7 @@
                   name="Employees"
                   parent="point_of_sale.menu_point_root"
                   sequence="95"
+                  groups="sultana_base.group_super_manager"
         />
 
         <menuitem id="menu_pos_employees"
