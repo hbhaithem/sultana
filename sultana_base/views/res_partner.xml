@@ -97,11 +97,13 @@
             <field name="arch" type="xml">
                 <form string="Partners">
                     <header>
-                        <button name="action_open_salary_wizard" string="Pay Salary" class="oe_highlight" type="object" />
+                        <button name="action_open_salary_wizard" string="Pay Salary" class="oe_highlight" type="object"
+                                invisible="not is_employee"/>
                     </header>
                     <sheet>
                         <div class="oe_button_box" name="button_box">
-                            <button icon="fa-bars" name="action_open_salary_payment" string="Salary Payment" class="oe_highlight" type="object"/>
+                            <button icon="fa-bars" name="action_open_salary_payment" string="Salary Payment"
+                                    class="oe_highlight" type="object" invisible="not is_employee"/>
                         </div>
                         <widget name="web_ribbon" title="Archived" bg_color="text-bg-danger" invisible="active"/>
                         <field name="image_1920" widget='image' class="oe_avatar"
