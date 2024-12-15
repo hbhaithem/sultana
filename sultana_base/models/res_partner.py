@@ -74,7 +74,7 @@ class ResPartner(models.Model):
             'name': _('Pay Salary'),
             'res_model': 'employee.salary.wizard',
             'target': 'new',
-            'views': [(self.env.ref('sultana_base.view_pos_profit_loss_details_wizard').id, 'form')],
+            'views': [(self.env.ref('sultana_base.view_employee_salary_wizard').id, 'form')],
             'context': {
                 'default_partner_id': self.id,
                 'default_salary': self.salary - month_salary,

@@ -8,8 +8,9 @@
             <field name="arch" type="xml">
                 <form string="Salary Payment">
                     <group>
-                        <field name="partner_id" readonly="1"/>
+                        <field name="partner_id" readonly="1" options="{'no_open': True}"/>
                         <field name="salary"/>
+                        <field name="currency_id" invisible="1"/>
                     </group>
                     <footer>
                         <button string="Confirm" name="action_create_salary_payment" type="object"
